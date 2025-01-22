@@ -1,0 +1,33 @@
+#function definitions--------------------------------------------------
+def cylinder(r,h):
+    return (3.14)*(r*r)*(h)
+
+def miles(k):
+    return k / 1.609
+
+def grade(x):
+    if x > 90:
+        return ("A")
+    
+    elif x >= 80:
+        return ("B")
+    
+    elif x >= 70:
+        return ("C")
+    
+    elif  x >= 60:
+        return ("D")
+    
+    elif x < 60:
+        return ("F")
+
+    
+#Function calls---------------------------------------------------------
+result = cylinder(5,3)
+print("The area of the cylinder is:", result)
+
+result = miles(5)
+print("Your distance in miles is:", result)
+
+result = grade(79)
+print("Your letter grade is:", result)
