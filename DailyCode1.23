@@ -1,0 +1,38 @@
+#function definitions--------------------------------------------------
+#Problem 1
+def surfaceArea(r):
+    return 4 * 3.14 * (r*r)
+    
+#Problem 2    
+def ChangeChecker(c):
+    if c % 5 == 0:
+        return("no pennies needed")
+    
+    elif c % 5 != 0:
+        return("you'll need pennies for this")
+
+#Problem 3
+def PrimeChecker(num):
+    prime = True
+    
+    for i in range(2,num):
+        if num % i == 0:
+            prime = False
+            
+    return (prime)
+    
+#Function calls---------------------------------------------------------
+#Problem 1
+result = surfaceArea(5)
+print("The surface area of the sphere is:", result)
+
+#Problem 2
+result = ChangeChecker(25)
+print(result)
+
+result = ChangeChecker(17)
+print(result)
+
+#Problem 3
+result = PrimeChecker(15)
+print(result)
