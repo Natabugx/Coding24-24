@@ -1,0 +1,42 @@
+#function definitions--------------------------------------------------
+
+
+#Problem 1
+def find_smallest(x,y,z):
+    if x < y:
+        if x < z:
+            return x
+    elif y < x:
+        if y < z:
+            return y
+    elif z < x:
+        if z < y:
+            return z
+#Problem 2    
+def custom_sheep_call(vowel, count):
+    print("B", end="")
+    for i in range (count):
+        print(vowel, end="") #Liam helped make it print left to right
+    
+    print()
+    
+#Problem 3
+def sum_even_numbers(max_num):
+    factorial = 1
+    if max_num % 2 == 0:
+        for i in range (1, max_num + 1):
+            factorial *= i
+    print(factorial)
+            
+#Function calls---------------------------------------------------------
+        
+#Problem 1
+result = find_smallest(7,2,5)
+print("The smallest number is: ", result)
+
+#Problem 2
+result = custom_sheep_call("a", 5)
+
+#Problem 3
+result = sum_even_numbers(6)
+
