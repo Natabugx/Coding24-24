@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+//Function declaration
+float CylinderVolume(int h, int r);
+bool isVowel(char x);
+void coinToss();
+
+int main() {
+	// making sure answer is returned as correct datatype
+	float answer1;
+	bool answer2;
+	//Function calls
+	answer1 = CylinderVolume(10, 5);
+	cout << "The volume of this cylinder is " << answer1 << endl;
+
+	answer2 = isVowel('E');
+	cout << answer2 << endl;
+	
+	coinToss();
+	coinToss();
+	coinToss();
+
+}
+
+//Function definitions
+float CylinderVolume(int h, int r) {
+	return (3.14) * (r * r) * (h);
+}
+
+bool isVowel(char x) {
+	if (x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U')
+		return true;
+	else
+		return false;
+}
+
+void coinToss() {
+	int num = rand() % 100;
+		if (num < 50)
+			cout << "Heads" << endl;
+		else if (num > 50)
+			cout << "Tails" << endl;
+}
